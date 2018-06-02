@@ -9,8 +9,7 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    yuv2bgr.cpp
+SOURCES += main.cpp
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/bin/ -lopencv_core310
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/bin/ -lopencv_core310d
